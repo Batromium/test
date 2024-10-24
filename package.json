@@ -1,0 +1,19 @@
+{
+  "name": "test-page",
+  "description": "Just a test. Nothing to see here",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "prewatch": "rimraf dist",
+    "watch": "swc src --only **/*.ts -d dist --strip-leading-paths --watch",
+    "prebuild": "rimraf dist",
+    "build": "swc src --only **/*.ts -d dist --strip-leading-paths"
+  },
+  "author": "Batromium",
+  "license": "ISC",
+  "devDependencies": {
+    "@swc/cli": "0.4.1-nightly.20240914",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.6.3"
+  }
+}
